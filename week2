@@ -1,0 +1,13 @@
+#Basic
+
+#1.
+number = int(input("enter number?"))
+perf_square = 0
+for i in range(1,number):
+	square = i*i
+	
+	if square <= number:
+		perf_square = square
+	else:
+		break
+print(perf_square)
