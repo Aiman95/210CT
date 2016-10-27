@@ -2,18 +2,17 @@
 
 #1.
 
-INPUT number
-STORE the user input in the variable
+number <- INPUT
 perf_square <- 0
 
-for i <- 1 to n
+for i <- 1 to number
      square <- i*i 
      
      if square <= number then
          perf_square <- square
          
      else 
-     break
+     	break
 OUTPUT perf_square
 
 
