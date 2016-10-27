@@ -1,6 +1,22 @@
 #Basic
 
 #1.
+
+INPUT number
+STORE the user input in the variable
+perf_square <- 0
+
+for i <- 1 to n
+     square <- i*i 
+     
+     if square <= number then
+         perf_square <- square
+         
+     else 
+     break
+OUTPUT perf_square
+
+
 number = int(input("enter number?"))
 perf_square = 0
 for i in range(1,number):
