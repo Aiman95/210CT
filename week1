@@ -1,0 +1,27 @@
+#week1
+#BASIC/INTERMEDIATE_TASKS
+
+#1.
+
+
+
+
+#2.
+
+def factorial_number(n):
+	
+	f = 1 
+	while n >= 1:
+		f = f*n 
+		n = n - 1 
+	return f 
+	
+def zeros(n):
+	fac = factorial_number(n)
+	zero = 0
+	
+	while fac %10 == 0:
+		zero += 1 
+		fac = fac//10
+	print(zero)
+	
