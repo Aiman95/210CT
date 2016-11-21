@@ -26,3 +26,45 @@ for i in range(1,number):
 	else:
 		break
 print(perf_square)
+
+
+
+#2.
+
+
+
+
+def shuffel(l):
+    i = len(l)                                                          (1)
+    while i > 1:                                                      (n)
+        i = i – 1                                                        (n)
+        j = randrange(i)  # 0 <= j <= i-1                  (n)
+        l[j], l[i] = l[i], l[j]                                         (n)
+    return l                                                             (1)
+    
+1 +n +n+n+n+1
+2+4n
+bigO(n)
+
+
+
+
+#2.
+
+def factorial_number(n):
+	
+	f = 1                                                   (1)                      1+n+n+n+1     
+	while n >= 1:                                     (n)                                3n+2
+		f = f*n                                 (n)
+		n = n - 1                               (n)
+	return f                                               (1)
+	
+def zeros(n):
+	fac = factorial_number(n)                         (3n+2)                                3n+2+1+n+n+n+1
+	zero = 0                                                     (1)                            6n+4 
+	                                                                                              bigO(n)
+	while fac %10 == 0:                                  (n)
+		zero += 1                                     (n)
+		fac = fac//10                                (n)
+	print(zero)                                                  (1)
+	
