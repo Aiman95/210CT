@@ -1,3 +1,15 @@
+#1.
+get = input("enter string")
+def reverse(string):
+
+  r_string = string.split(" ")
+  res = []
+  for word in range(len(r_string) - 1, -1, -1): 
+    res.append(r_string[word])
+
+  return " ".join(res)
+
+print(reverse(get))
 
 #2.
 n1 = int(input("enter number "))
