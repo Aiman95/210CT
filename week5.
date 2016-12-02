@@ -1,10 +1,6 @@
 
 
 
-
-
-
-
 #2.
 
 class Node(object):
