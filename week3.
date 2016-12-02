@@ -1,0 +1,29 @@
+
+#2.
+n1 = int(input("enter number "))
+d1 = n1 - 1
+def prime(n, d):
+
+	if n < 2:
+		print ('Not prime.')
+	else:
+		if n % d == 0:
+			print ('Not prime.')
+		elif n % d != 0 and d != 2:
+			recPrime(n, d - 1)
+		elif n % d != 0 and d == 2:
+			print ('Prime!')
+prime(n1, d1)
+
+#3.
+get = input("enter string")
+def remove(string):
+    if not string:
+
+        return ' '
+
+    elif string[0] in "AaOoEeIiUu" :
+        return remove(string[1:])
+    return string[0]+ remove(string[1:])
+
+print(remove(get))
